@@ -28,14 +28,14 @@ int main()
                 {
                     cout << "Palavra em PT-BR: "; cin >> pt;
                     cout << "Palavra em EN-US: "; cin >> en;
-                    inserirPalavra(&dic, &pt, &en);
+                    inserirPalavra(dic, pt, en);
 
                     break;
                 }
             case 2:
                 {
                     cout << "Palavra a ser removida: "; cin >> palavra;
-                    removerPalavra(&dic, &palavra);
+                    removerPalavra(dic, palavra);
 
                     break;
                 }
@@ -44,7 +44,7 @@ int main()
                     cout << "Palavra a ser buscada: "; cin >> palavra;
 
                     {
-                        string traducao = buscarPalavra(&dic, &palavra);
+                        string traducao = buscarPalavra(dic, palavra);
                         if (traducao.empty() == false)
                             cout << "Traducao: " << traducao << endl;
                         else 
@@ -55,7 +55,7 @@ int main()
                 }
             case 4:
                 {
-                    exibirDicionario(&dic);
+                    exibirDicionario(dic);
 
                     break;
                 }
@@ -63,7 +63,7 @@ int main()
                 {
                     cout << "Texto a ser traduzido: ";
                     getline(cin, texto);
-                    traduzir(&dic, &texto);
+                    traduzir(dic, texto);
 
                     break;
                 }

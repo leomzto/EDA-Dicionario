@@ -32,11 +32,10 @@ O dicionário é implementado utilizando uma **lista encadeada simples**, onde c
     -   Algoritmos de busca e inserção
     -   SQLite3 (banco de dados)
 
-  
-
 ## **Referencias**
 
--   [https://www.sqlite.org/docs.html](https://www.sqlite.org/docs.html "https://www.sqlite.org/docs.html")
+-   [https://www.sqlite.org/capi3ref.html](https://www.sqlite.org/capi3ref.html "https://www.sqlite.org/capi3ref.html")
+-   [https://www.geeksforgeeks.org/cpp/sql-using-c-c-and-sqlite/](https://www.geeksforgeeks.org/cpp/sql-using-c-c-and-sqlite/ "https://www.geeksforgeeks.org/cpp/sql-using-c-c-and-sqlite/")
 -   [https://pt.stackoverflow.com/questions/319622/quando-usar-o-cin-ignore-em-c](https://pt.stackoverflow.com/questions/319622/quando-usar-o-cin-ignore-em-c "https://pt.stackoverflow.com/questions/319622/quando-usar-o-cin-ignore-em-c")
 -   [https://www.inf.pucrs.br/~flash/programming/aula_stringstreams.html](https://www.inf.pucrs.br/~flash/programming/aula_stringstreams.html "https://www.inf.pucrs.br/~flash/programming/aula_stringstreams.html")
 -   [https://cplusplus.com/reference/sstream/stringstream/](https://cplusplus.com/reference/sstream/stringstream/ "https://cplusplus.com/reference/sstream/stringstream/")
