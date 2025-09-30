@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Projeto desenvolvido como trabalho acadêmico da disciplina de **Estruturas de Dados e Algoritmos**.
+Projeto desenvolvido como trabalho acadêmico da disciplina de **Estruturas de Dados e Algoritmos** do curso de **Sistemas de Informação** na **Universidade Federal de Viçosa**.
 
 O objetivo é implementar um **dicionário português-inglês** utilizando **listas encadeadas**, permitindo armazenar palavras em português e inglês e suas respectivas traduções, além de traduzir textos.
 
