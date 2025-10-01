@@ -1,8 +1,13 @@
 #include "dicionario.hpp"
-
 int main()
 {
+    bool bancoAbriu = inicializarBanco();
+    if (!bancoAbriu)
+        exit(1);
+
     Dicionario dic;
+
+    carregarDicionario(dic);
 
     int opc;
     string pt, en, palavra, texto;
@@ -23,12 +28,15 @@ int main()
         {
             case 0:
                 cout << "Saindo..." << endl;
-                break;
+                fecharBanco();
+                exit(1);
             case 1:
                 {
                     cout << "Palavra em PT-BR: "; cin >> pt;
                     cout << "Palavra em EN-US: "; cin >> en;
-                    inserirPalavra(dic, pt, en);
+
+    
+                    inserirPalavra(dic, pt, en, true);
 
                     break;
                 }
@@ -70,6 +78,8 @@ int main()
         }
         
     } while (true);
+
+    fecharBanco();
 
     return 0;
 }

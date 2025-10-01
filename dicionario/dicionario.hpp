@@ -41,16 +41,13 @@ typedef struct sDicionario {
 } Dicionario;
 
 // Dicionario
-void inserirPalavra(Dicionario &dic, string &pt, string &en);
+void inserirPalavra(Dicionario &dic, string &pt, string &en, bool salvarNoDB);
 void removerPalavra(Dicionario &dic, string &palavra);
 
 string buscarPalavra(Dicionario &dic, string &palavra);
 void exibirDicionario(Dicionario &dic);
 
 void traduzir(Dicionario &dic, string &texto);
-//void traduzirTeste01(Dicionario* dic, string *texto);
-//void traduzirTeste02(Dicionario* dic, string *texto);
-
 
 // Banco de Dados
 bool inicializarBanco();
