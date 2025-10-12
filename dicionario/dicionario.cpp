@@ -159,9 +159,9 @@ void traduzirPalavra(Dicionario &dic, string &texto)
     string palavra; 
     cout << "Traducao:" << endl;
 
-    for (char caractere : texto) // para cada caractere no texto
+    for (char caractere : texto)
     {
-        if (caractere == ' ') // encontrou o fim da palavra
+        if (caractere == ' ')
         {
             if (palavra.empty() == false)
             {
@@ -175,7 +175,7 @@ void traduzirPalavra(Dicionario &dic, string &texto)
                 palavra.clear();
             }
             else
-                palavra += caractere; // avança caractere
+                palavra += caractere;
         }
     }
 
@@ -207,7 +207,7 @@ bool inicializarBanco()
 
     const char* sql = "CREATE TABLE IF NOT EXISTS palavras (id INTEGER PRIMARY KEY AUTOINCREMENT, pt_br TEXT NOT NULL COLLATE NOCASE, en_us TEXT NOT NULL COLLATE NOCASE);";
     
-    char*  errmsg;
+    char* errmsg;
 
     int execSQL = sqlite3_exec(db, sql, nullptr, nullptr, &errmsg);
 
